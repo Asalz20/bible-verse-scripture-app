@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Bible Verse Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="card">
+        <h5 name="range" class="card__passage card__passage--highlight"></h5>
+        <div id="scripture" class="card__scripture-container">
+          <p name="scripture" class = "card_scripture--highlight"></p>
+        </div>
+        <div class="card__separator">
+          <img src="images/pattern-divider-mobile.svg" alt="SVG Separator" />
+        </div>
+        <div class="button__container">
+          <div class="generate__button">
+              <div id="rotate">
+                <span class="iconify" data-icon="fa:refresh" style="color: black;" data-width="24" data-height="24"></span>
+              </div>
+          </div>
+          <div class="write__button">
+              <div id="expand">
+                <span class="iconify" data-icon="fluent:document-one-page-24-filled" style="color: black;" data-width="28" data-height="28"></span>
+              </div>
+        </div>
+        </div>
+      </section>
+      <div id="text-box" class="card hide">
+        <div class="exit__container">
+          <div id="close" class="exit__button">
+            <span class="iconify" data-icon="ci:off-outline-close" data-width="28" data-height="28"></span>
+          </div>
+        </div>
+
+        <textarea action= "/addInterpretation" method="POST" class="textarea" placeholder="Enter your interpretation..." name="interpretation"></textarea>
+        <div class="save__container">
+          <div class="save__button">
+            <div>
+              <span class="iconify" data-icon="ic:round-save-alt" style="color: black;" data-width="28" data-height="28"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Developed by <a href="https://asalazar.dev/">Alex Salazar</a>
+    </div>
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
